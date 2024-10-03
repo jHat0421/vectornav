@@ -98,3 +98,19 @@ Run with ros2 launch (Option 2, uses parameters from vectornav.yaml):
 
 (Terminal 3) 
 ```ros2 topic echo /vectornav/imu```
+
+<h2>vectornav node</h2>
+
+This node provides a ROS2 interface for a vectornav device. It can be configured
+via ROS parameters and publishes sensor data via custom ROS topics as close to raw as possible.
+
+
+<h2>vn_sensor_msgs node</h2>
+
+This node will convert the custom raw data topics into ROS2 sensor_msgs topics to make it easier 
+to integrate with other ROS2 packages. 
+
+
+<h2>References</h2>
+
+[1] [VectorNav](http://www.vectornav.com/)
