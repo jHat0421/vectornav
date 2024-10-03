@@ -1,4 +1,4 @@
-VectorNav ROS 2 Install  
+<h1>VectorNav ROS 2 Install</h1>
 A ROS2 node for VectorNav INS / GNSS devices. 
 
 This package provides both raw and sensor_msg interfaces for the VN100, 200, & 300 devices. It has been entirely redesigned from the ROS1 package to provide a good basis to build into applications without requiring modification of the node itself. Most of the device configuration settings are exposed as ROS2 parameters that can be modified from a launch file.  
