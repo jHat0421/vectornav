@@ -91,13 +91,19 @@ Run with ros2 run (Option 1):
 Run with ros2 launch (Option 2, uses parameters from vectornav.yaml): 
 
 (Terminal 1) 
-```ros2 launch vectornav vectornav.launch.py```
+```
+ros2 launch vectornav vectornav.launch.py
+```
 
 (Terminal 2) 
-```ros2 topic echo /vectornav/raw/common```
+```
+ros2 topic echo /vectornav/raw/common
+```
 
 (Terminal 3) 
-```ros2 topic echo /vectornav/imu```
+```
+ros2 topic echo /vectornav/imu
+```
 
 <h2>vectornav node</h2>
 
