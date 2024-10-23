@@ -79,14 +79,22 @@ Now you will be able to run vectornav from the overlay
 
 Run with ros2 run (Option 1): 
 (Terminal 1)
-```ros2 run vectornav vectornav```
+```
+ros2 run vectornav vectornav
+```
 (Terminal 2)
-```ros2 topic echo /vectornav/raw/common```
+```
+ros2 topic echo /vectornav/raw/common
+```
 (Terminal 3) 
-```ros2 run vectornav vn_sensor_msgs```
+```
+ros2 run vectornav vn_sensor_msgs
+```
 
 (Terminal 4) 
-```ros2 topic echo /vectornav/imu```
+```
+ros2 topic echo /vectornav/imu
+```
 
 Run with ros2 launch (Option 2, uses parameters from vectornav.yaml): 
 
