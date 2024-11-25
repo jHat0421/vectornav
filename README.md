@@ -68,9 +68,13 @@ source ~/.bashrc
 Make sure that your user has the necessary permissions to access the /dev/ttyUSB0 port. Typically, you need to be in the dialout group to access serial ports without sudo. 
 
 Check if your user is part of the dialout group:  
-```groups```
+```
+groups
+```
 If you don't see dialout, add your user to the group with the following command: 
-```sudo usermod -a -G dialout $USER```
+```
+sudo usermod -a -G dialout $USER
+```
 After doing this, log out and log back in (or restart your machine) to apply the changes. 
 
   
