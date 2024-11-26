@@ -6,7 +6,9 @@ This package provides both raw and sensor_msg interfaces for the VN100, 200, & 3
 <h2>1. Source ROS 2 environment</h2> 
 
 Your main ROS 2 installation will be your underlay for this tutorial. (Keep in mind that an underlay does not necessarily have to be the main ROS 2 installation.) Depending on how you installed ROS 2 (from source or binaries), and which platform you’re on, your exact source command will vary: 
-```source /opt/ros/jazzy/setup.bash```
+```
+source /opt/ros/jazzy/setup.bash
+```
 <h2>2. Create a new directory</h2>
 
 The best practice is to create a new directory for every new workspace. The name doesn’t matter, but it is helpful to have it indicate the purpose of the workspace. Let’s choose the directory name ros2_ws, for “development workspace”: 
@@ -18,7 +20,9 @@ cd ~/ros2_ws/src
 <h2>3. Clone a sample repo</h2>
 
 In the ros2_ws/src directory, run the following command: 
-```git clone https://github.com/dawonn/vectornav.git -b ros2```
+```
+git clone https://github.com/dawonn/vectornav.git -b ros2
+```
 So far you have populated your workspace with a sample package, but it isn’t a fully functional workspace yet. You need to resolve the dependencies first and then build the workspace. 
 
 <h2>4. Resolve dependencies</h2>
@@ -42,9 +46,13 @@ rosdep install -i --from-path src --rosdistro jazzy -y
 <h2>5. Build the workspace with Colcon</h2>
 
 From the root of your workspace (ros2_ws), you can now build your packages using the command: 
-```colcon build```
+```
+colcon build
+```
 Once the build is finished, enter the command in the workspace root (~/ros2_ws): 
-```ls```
+```
+ls
+```
 , and you will see that Colcon has created new directories: 
 
 _build  install  log  src_
